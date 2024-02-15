@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    to bottom,
+    hsl(248.57, 100%, 10.98%) 0%,
+    hsl(242.92, 82.46%, 12.21%) 8.4%,
+    hsl(236.65, 76.51%, 13.11%) 16.7%,
+    hsl(231.14, 78.05%, 13.72%) 24.9%,
+    hsl(226.65, 79.83%, 14.47%) 33%,
+    hsl(223.08, 81.69%, 15.31%) 40.8%,
+    hsl(220.27, 83.53%, 16.19%) 48.4%,
+    hsl(218.07, 85.3%, 17.09%) 55.8%,
+    hsl(216.31, 87%, 17.96%) 62.9%,
+    hsl(214.91, 88.63%, 18.8%) 69.6%,
+    hsl(213.76, 90.19%, 19.58%) 75.9%,
+    hsl(212.82, 91.71%, 20.29%) 81.7%,
+    hsl(212.04, 93.23%, 20.92%) 87.1%,
+    hsl(211.37, 94.79%, 21.45%) 92%,
+    hsl(210.77, 96.54%, 21.86%) 96.3%,
+    hsl(210, 100%, 21.96%) 100%
+  );
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#page-title {
+  font-size: 3rem;
+  color: #fcfcfc;
+}
+
+.input-container {
+  max-width: 40%;
+  background-color: #fcfcfc;
+  padding: 50px;
+  border-radius: 45px;
+  font-size: 20px;
+  border: 3px solid pink;
+}
+
+.input-container,
+.palindrome-info {
+  margin: 20px;
+}
+
+/* Style for the palindrome information */
+.palindrome-info {
+  background-color: #90ee90; /* Light green background */
+  padding: 20px;
+  border-radius: 35px;
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  max-width: 40%;
+  border: 3px solid darkgreen;
+}
+
+input[type="text"] {
+  max-width: 85%;
+  margin-top: 30px;
+  border: none;
+  border-bottom: 2px solid pink;
+  outline: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  border-bottom: 2px solid hsl(210, 100%, 21.96%);
+}
+
+button {
+  padding: 0.7em 1.7em;
+  border-radius: 35px;
+  background-color: #fcfcfc;
+  border: 2px solid pink;
+  font-size: 15px;
+}
+
+button:active {
+  border-bottom: 3px solid pink;
+  border-right: 3px solid pink;
+}
+
+#result {
+  margin-top: 30px;
+}
+
+#light {
+  margin-right: 10px; /* Adds space between the lightbulb and the text */
+}
+
+#text {
+  text-align: left; /* Aligns the text to the right of the lightbulb */
+  margin: 0;
+}
+
+@media screen and (max-width: 880px) {
+  #check-btn {
+    margin-top: 20px;
+    max-width: 70%;
+    width: 70%;
+  }
+}
